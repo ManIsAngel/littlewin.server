@@ -26,7 +26,7 @@ const QINIU = {
   secretKey: 'MMZhc-eBH-9Pb8riQmkpYZfkRxGql24Zuz2XzI7o',
   bucket: 'littlewin',
   origin: 'http://7xpot0.com1.z0.glb.clouddn.com',
-  uploadURL: 'http://up-z0.qiniu.com' 
+  uploadURL: 'http://up-z0.qiniu.com'
 }
 
 const GITHUB = {
@@ -40,6 +40,11 @@ const session = {
   signed: true,
 }
 
+const EMAIL = {
+  account: 'littlewin.wang@qq.com',
+  password: 'zfnpzulneaocbidh'
+}
+
 module.exports = {
   // 开发环境配置
   development: {
@@ -48,6 +53,7 @@ module.exports = {
     QINIU,
     GITHUB,
     session,
+    EMAIL,
     mongo: {
       uri: 'mongodb://localhost:27017/littlewin-dev'
     },
@@ -61,6 +67,7 @@ module.exports = {
     QINIU,
     GITHUB,
     session,
+    EMAIL,
     mongo: {
       uri: 'mongodb://localhost:27017/littlewin-prd'
     },
