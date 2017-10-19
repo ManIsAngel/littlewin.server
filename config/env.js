@@ -45,6 +45,11 @@ const EMAIL = {
   password: 'zfnpzulneaocbidh'
 }
 
+const AKISMET = {
+  key: 'fc81d96df449',
+  blog: 'http://littlewin.wang'
+}
+
 module.exports = {
   // 开发环境配置
   development: {
@@ -54,6 +59,7 @@ module.exports = {
     GITHUB,
     session,
     EMAIL,
+    AKISMET,
     mongo: {
       uri: 'mongodb://localhost:27017/littlewin-dev'
     },
@@ -68,6 +74,7 @@ module.exports = {
     GITHUB,
     session,
     EMAIL,
+    AKISMET,
     mongo: {
       uri: 'mongodb://localhost:27017/littlewin-prd'
     },
